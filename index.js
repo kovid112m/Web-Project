@@ -1,13 +1,27 @@
-// choose_state.addEventListener("change",
-// function(){document.getElementById("bod").innerText="CoronaWeb"})
+const mysql = require('phpMyAdmin');
 
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "switchiton"
+});
 
-// function state_asm(){
-//     document.getElementById("bod").innerText="Assam"
-// }
+con.connect(function (err) {
+    if (err) throw err;
+    console.log("Connected!");
+});
+
+// con.connect(function (err) {
+//     if (err) throw err;
+//     console.log("Connected!");
+//     con.query(sql, function (err, result) {
+//         if (err) throw err;
+//         console.log("Result: " + result);
+//     });
+// });
 
 function getOption() {
-    selectElement = document.querySelector('#choose_state');
+    selectElement = document.querySelector('#fil');
 
     output = selectElement.value;
 
@@ -16,9 +30,9 @@ function getOption() {
 
 function display(){
     getOption();
-    ans = "You selected " + output;
-    document.querySelector('.output').textContent = ans;
+    // ans = "You selected " + output;
+    document.querySelector('#bos1').innerText = output;
 }
 
 
-document.getElementById('box1').innerText="Cases"
+// document.getElementById('box1').innerText="Cases"
