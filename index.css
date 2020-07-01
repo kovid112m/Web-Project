@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(201, 181, 130);
+    background-color: white;
 }
 
 .navi{
@@ -16,9 +16,6 @@ img{
     display:flex;
     margin:-20px -10px;
     background-color: black;
-    
-    
-    
 }
 .navi ul li{
     list-style: none;
@@ -44,16 +41,21 @@ img{
     display:flex;
     margin:53px -5px;
     margin-right:-2px;
-    height:1000px;
-    border:2px solid red;
+    height:200px;
     justify-content:center;
-
-
 }
+.hosp1{
+    display:flex;
+    flex-wrap: wrap;
+    margin:53px -5px;
+    margin-right:-2px;
+    height:2000px;
+    justify-content:center;
+}
+
 .ite{
     width:100px;
     height:100px;
-    border:3px solid red;
     margin:10px;
     border-radius: 10px;
     padding:10px;
@@ -63,6 +65,22 @@ img{
     justify-content: center;
     line-height: 100px;
     background-color: orange;
+    line-break: none;
+    text-size-adjust: auto;
+}
+.hos{
+    flex-direction: column;
+    width:350px;
+    height:350px;
+    margin:10px;
+    border-radius: 10px;
+    padding:10px;
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 6px red;
+    justify-content: center;
+    line-height: 100px;
+    background-color: rgb(89, 143, 9);
     line-break: none;
     text-size-adjust: auto;
 }
@@ -77,4 +95,16 @@ img{
     left: 493px;
     border: 2px solid red;
     font-size: larger;
+}
+.prec{
+    border: 2px solid red;
+    display:flex;
+    margin:53px -5px;
+    margin-right:-2px;
+    height:1000px;
+    font-size: larger;
+    padding: 20px;
+}
+h1{
+    text-align: center;
 }
