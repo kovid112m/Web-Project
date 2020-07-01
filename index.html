@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hack</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <nav class="navi">
-       
+
         <ul>
-            <img src="covid19_logo.png" alt="">
+            <img src="covid19_logo.png" height="50" width="50"></img>
             <!-- <li class="item"> -->
-                <select name="field" id="fil">
-                    <option value="selec"selected Disabled hidden>select region</option>
-                    <optgroup label="States">
-                        
-                        <option value="selec">Andra pradesh</option>
-                        <option value="selec">Arunachal Pradesh</option>
-                        <option value="selec">Assam</option>
-                        <option value="selec">Bihar</option>
-                        <option value="selec">Chhattisgarh</option>
-                        <option value="selec">Goa</option>
-                        <option value="selec">Gujarat</option>
-                        <option value="selec">Haryana</option>
-                        <option value="selec">Himachal Pradesh</option>
-                        <option value="selec">Jharkhand</option>
-                        <option value="selec">Karnataka</option>
-                        <option value="selec">Kerala</option>
-                        <option value="selec">Madya Pradesh</option>
-                        <option value="selec">Maharashtra</option>
-                        <option value="selec">Manipur</option>
-                        <option value="selec">Meghalaya</option>
-                        <option value="selec">Mizoram</option>
-                        <option value="selec">Nagaland</option>
-                        <option value="selec">Orissa</option>
-                        <option value="selec">Punjab</option>
-                        <option value="selec">Rajasthan</option>
-                        <option value="selec">Sikkim</option>
-                        <option value="selec">Tamil Nadu</option>
-                        <option value="selec">Telagana</option>
-                        <option value="selec">Tripura</option>
-                        <option value="selec">Uttrakhand</option>
-                        <option value="selec">Uttra Pradesh</option>
-                        <option value="selec">West Bengal</option>
-                    </optgroup>
-                    <optgroup label="Union territories">
-                            <option value="selec">Delhi</option>
-                            <option value="selec">Jammu and Kashmir</option>
-                            <option value="selec">Daman and Diu</option>
-                            <option value="selec">Lakshadeep</option>
-                            <option value="selec">Andaman and Nicobar island</option>
-                            <option value="selec">Puducherry</option>
-                            <option value="selec">Chandigarh</option>
-                            <option value="selec">Ladakh</option>
-                            <option value="selec">Dadra and Nagar Haveli</option>
-                        </optgroup>
-                        
-                        
-                    </select>
-                    <!-- </li> -->
-                    <li class="item"><a href="#">Home</a></li>
-                    <li class="item"><a href="#">Precautions</a></li>
-                    <li class="item"><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-            <section class="data">
+            <select name="field" id="fil">
+                <option value="selec" selected Disabled hidden>Select Region</option>
+                <optgroup label="States">
+
+                    <option value="Andra">Andra pradesh</option>
+                    <option value="Arunachal">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="MP">Madya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Orissa">Orissa</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telagana">Telagana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttrakhand">Uttrakhand</option>
+                    <option value="Uttra Pradesh">Uttra Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                </optgroup>
+                <optgroup label="Union territories">
+                    <option value="Delhi">Delhi</option>
+                    <option value="J & K">Jammu and Kashmir</option>
+                    <option value="Daman&Diu">Daman and Diu</option>
+                    <option value="Lakshadeep">Lakshadeep</option>
+                    <option value="Andaman">Andaman and Nicobar island</option>
+                    <option value="Puducherry">Puducherry</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Ladakh">Ladakh</option>
+                    <option value="Dadra">Dadra and Nagar Haveli</option>
+                </optgroup>
+
                 
-                
-                    <div class="ite" id="bos1"></div>
-                    <div class="ite" id="bos2"></div>
-                    <div class="ite" id="bos3"></div>
-                    <div class="ite" id="bos4"></div>
-                
-            </section>
-            
-    
+            </select>
+            <li><button class="go" onclick="display()">Go</button></li>
+            <!-- </li> -->
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Precautions</a></li>
+            <li class="item"><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <span class="output"></span> 
+    <section class="data">
+
+
+        <div class="ite" id="bos1">India</div>
+        <div class="ite" id="bos2">5,85,493</div>
+        <div class="ite" id="bos3">3,47,978</div>
+        <div class="ite" id="bos4">17,400</div>
+
+    </section>
+    <!-- <div class="state">
+        India
+    </div> -->
+
 </body>
 <script src="index.js"></script>
+
 </html>
